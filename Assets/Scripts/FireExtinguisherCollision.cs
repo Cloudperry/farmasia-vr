@@ -2,12 +2,12 @@ using UnityEngine;
 
 public class FireExtinguisherCollision : MonoBehaviour
 {
-    private FireGrid fireGrid;
+    //private FireGrid fireGrid;
 
     // Fetches the FireGrid script that's attached to the FireGridObject
     private void Start()
     {
-        fireGrid = FindObjectOfType<FireGrid>();
+       // fireGrid = FindObjectsOfType<FireGrid>();
     }
 
     /// <summary>
@@ -17,12 +17,12 @@ public class FireExtinguisherCollision : MonoBehaviour
     /// <param name="collision"></param>
     private void OnParticleCollision(GameObject collision)
     {
-        
         if (collision.tag == "FireGrid")
         {
-            if (fireGrid != null)
+            FireGrid fire = collision.GetComponentInParent<FireGrid>();       
+            if (fire != null)
             {
-                fireGrid.Extinguish();
+                fire.Extinguish();
             }
         }
     }
