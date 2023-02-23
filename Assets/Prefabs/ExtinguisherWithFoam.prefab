@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 56203202}
   - component: {fileID: 56203200}
   - component: {fileID: 56203201}
+  - component: {fileID: 131043914}
   m_Layer: 0
   m_Name: Foam
   m_TagString: Untagged
@@ -4813,6 +4814,18 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
+--- !u!114 &131043914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 56203199}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b753afde0a231f4a8be26b532feba8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3988046621441103012
 GameObject:
   m_ObjectHideFlags: 0
@@ -4872,7 +4885,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5931868155040255036}
-  m_LocalRotation: {x: -0.66670537, y: 0.23559293, z: 0.23559289, w: 0.6667053}
+  m_LocalRotation: {x: -0.6667046, y: 0.23559499, z: 0.23559499, w: 0.6667046}
   m_LocalPosition: {x: -2.437, y: 0.314, z: 1.288}
   m_LocalScale: {x: 0.13, y: 0.13, z: 0.2971429}
   m_ConstrainProportionsScale: 1

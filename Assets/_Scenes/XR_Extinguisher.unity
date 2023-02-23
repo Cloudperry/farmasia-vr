@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.3069224, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -327,6 +327,7 @@ MonoBehaviour:
   igniteKey: 32
   extinguishKey: 103
   fireVFX: {fileID: 936779404}
+  smokeVFX: {fileID: 0}
   igniteParticle: {fileID: 813322530}
   extinguishParticle: {fileID: 401022554}
   pointLight: {fileID: 1682452752}
@@ -476,12 +477,12 @@ PrefabInstance:
     - target: {fileID: 6420420046711953030, guid: 153460bf95f10ec409220df33259df0b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.313776
+      value: 0.925
       objectReference: {fileID: 0}
     - target: {fileID: 6420420046711953030, guid: 153460bf95f10ec409220df33259df0b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.5851078
+      value: 1.585
       objectReference: {fileID: 0}
     - target: {fileID: 6420420046711953030, guid: 153460bf95f10ec409220df33259df0b,
         type: 3}
@@ -16929,7 +16930,7 @@ PrefabInstance:
     - target: {fileID: 7297095881171687465, guid: 3fa949d1e2da943fa868465536f7e9e2,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8760252833753192672, guid: 3fa949d1e2da943fa868465536f7e9e2,
         type: 3}
