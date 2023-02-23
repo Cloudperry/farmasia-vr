@@ -295,24 +295,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!1 &131043910 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 56203199, guid: 153460bf95f10ec409220df33259df0b,
-    type: 3}
-  m_PrefabInstance: {fileID: 1841049368}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &131043914
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 131043910}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b753afde0a231f4a8be26b532feba8b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &145063050
 GameObject:
   m_ObjectHideFlags: 0
@@ -366,6 +348,7 @@ MonoBehaviour:
   igniteKey: 32
   extinguishKey: 103
   fireVFX: {fileID: 456765121}
+  smokeVFX: {fileID: 0}
   igniteParticle: {fileID: 1290354324}
   extinguishParticle: {fileID: 434037654}
   pointLight: {fileID: 2010305852}
@@ -580,7 +563,7 @@ GameObject:
   - component: {fileID: 434037653}
   m_Layer: 0
   m_Name: ExtinguishParticle
-  m_TagString: Untagged
+  m_TagString: FireGrid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5606,7 +5589,7 @@ GameObject:
   - component: {fileID: 589723702}
   m_Layer: 0
   m_Name: ColliderCube
-  m_TagString: Untagged
+  m_TagString: FireGrid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11682,14 +11665,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 56203200, guid: 153460bf95f10ec409220df33259df0b, type: 3}
-      propertyPath: playOnAwake
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5931868155040255036, guid: 153460bf95f10ec409220df33259df0b,
         type: 3}
       propertyPath: m_Name
       value: ExtinguisherWithFoam
+      objectReference: {fileID: 0}
+    - target: {fileID: 5931868155040255036, guid: 153460bf95f10ec409220df33259df0b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6420420046711953030, guid: 153460bf95f10ec409220df33259df0b,
         type: 3}

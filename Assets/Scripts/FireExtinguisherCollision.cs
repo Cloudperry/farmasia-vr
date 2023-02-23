@@ -17,10 +17,13 @@ public class FireExtinguisherCollision : MonoBehaviour
     /// <param name="collision"></param>
     private void OnParticleCollision(GameObject collision)
     {
-        Debug.Log("gwqeoj");
+        
         if (collision.tag == "FireGrid")
         {
-            fireGrid.Extinguish();
+            if (fireGrid != null)
+            {
+                fireGrid.Extinguish();
+            }
         }
     }
 }
